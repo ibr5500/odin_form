@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'norse';
+  src: url('./fonts/Norse-Bold.otf') format('opentype');
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+  /* text-align: center; */
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.img_bg {
+  height: 100%;
+  width: 33%;
+  background-image: url('./assets/unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.img_bg_content {
+  display: flex;
+}
+
+.logo_container {
+  width: 100%;
+  height: fit-content;
+  height: -moz-fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  items-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  margin: 40% 0;
+}
+
+.odin_logo {
+  width: 70px;
+  height: 90px;
+}
+
+.odin_logo_text {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: norse, sans-serif;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.footer_text {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.form_container {
+  height: 100%;
+  /* width: 67%; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: between;
+  height: auto;
+  margin: 3% auto;
+}
+
+.form_header {
+  width: 70%;
+  margin: auto;
+  font-weight: 600;
+}
+
+.inputs_container {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px 0 20px 0;
+}
+
+.form_title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 70%;
+  margin: 5px auto 2px auto;
+}
+
+.inputs {
+  height: auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form_input_group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.btn_container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #596D48;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  width: auto;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4A5D3E;
+}
+
+.btn_container a {
+  color: #596D48;
+  text-decoration: none;
+  /* font-size: 0.8rem; */
+  font-weight: 600;
+  margin: 10px 0;
+}
